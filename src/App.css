@@ -1,0 +1,132 @@
+body{
+  background:rgb(231, 9, 194);
+  display: flex;
+  text-align: center;
+  position: relative;right: -7.5cm;
+  margin-top: 2cm;
+  background-color: rgb(143, 31, 241);
+}
+
+.card{
+  border:none;
+background-color: rgb(235, 158, 249);
+  position:relative;
+  overflow:hidden;
+  border-radius:30px;
+  cursor:pointer;
+  height: 20cm;
+  margin: 1cm 5cm 1cm 0;
+}
+
+
+.card:before{
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#35a8ff;
+  transform:scaleY(1);
+  transition:all 0.5s;
+  transform-origin: bottom
+}
+
+.card:after{
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#3906f3;
+  transform:scaleY(0);
+  transition:all 0.5s;
+  transform-origin: bottom
+}
+
+.card:hover::after{
+  transform:scaleY(1);
+}
+
+
+.fonts{
+  font-size:11px;
+}
+
+.social-list{
+  display:flex;
+  list-style:none;
+  justify-content:center;
+  padding:0;
+}
+
+
+.img{
+  font-size: 10px;
+  width: 2cm;
+  height: 3cm;
+  margin: 1cm 4cm;
+  position: relative; top: 2.5cm; right: 2.5cm;
+  border-radius: 40cm;
+}
+.name{
+  position: relative; top: -4cm;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #9802d8;
+}
+
+.pro h2 {
+  position: relative; top: -4cm;
+  color: #3906f3;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pro p {
+  position: relative; left: 0.5cm; top: -4cm;
+  margin: 0cm 1cm 1cm 15cm ;
+  text-align: left;
+  color: black;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bio h2{
+  position: relative; top: -3cm;
+  color: #3906f3;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bio p{
+  position: relative; left: 0.5cm; top: -3cm;
+  margin: 0cm 1cm 1cm 15cm ;
+  text-align: left;
+  color: black;
+  font-size: 19px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.timer{
+  display: flex;
+  position: relative; left: 30cm; top: 1.5cm;
+}
+.timer h3{
+  color: red;
+}
+.timer p{
+  position: relative; left: 0.5cm; top: 0.18cm;
+}
+
+.butt{
+  background-color: rosybrown;
+  font-size: 20px;
+  border-color: #fb39c1;
+  cursor: pointer;
+}
+
+.butt:hover{
+  background-color: #fb39c1;
+}
